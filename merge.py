@@ -1,17 +1,30 @@
 import csv
 import pandas as pd
 import math
+import numpy as np
 
-df1 = pd.read_csv('C:\\Users\\Amela\\Desktop\\DHmiTrend.db\\Exported\\Log_R3065_CU_THS_SP_AS.csv')
-df2 = pd.read_csv('C:\\Users\\Amela\\Desktop\\DHmiTrend.db\\Exported\\Log_R3065_CU_THS_PV_AS.csv')
+refTempR = pd.read_csv('learning_set_1/Log_R3063_CU_THS_SP_AS_filtered.csv')
+realTempR = pd.read_csv('learning_set_1/Log_R3065_CU_THS_PV_AS_filtered.csv')
+balcDoorR = pd.read_csv('learning_set_1/Log_R3065_CU_BLC_DR_DS_filtered.csv')
+cabineR = pd.read_csv('learning_set_1/Log_R3065_CU_GST_INOUT_DS_filtered.csv')
 
-c = pd.merge(df1,df2,on='ts',how='outer')
+refTempL = pd.read_csv('learning_set_1/Log_R3063_CU_THS_SP_AS_filtered.csv')
+realTempL = pd.read_csv('learning_set_1/Log_R3063_CU_THS_PV_AS_filtered.csv')
+balcDoorL = pd.read_csv('learning_set_1/Log_R3063_CU_BLC_DR_DS_filtered.csv')
+cabineL = pd.read_csv('learning_set_1/Log_R3063_CU_GST_INOUT_DS_filtered.csv')
 
-print(type(c))
+
+part1 = pd.merge(refTempR, realTempR, on='ts', how='outer')
+part2 = pd.merge(balcDoorR, cabineR, on='ts', how='outer')
+
+part3 = pd.merge(part1, part2, on='ts', how='outer')
+
+#print(type(c))
 
 value1 = 0
 value2 = 0
 
+c = part3
 
 for index, row in c.iterrows():
     #print(c.iterrows())
@@ -35,4 +48,7 @@ for index, row in c.iterrows():
     else:
         c.loc[index, 'value_y'] = value2
 
+
 print(c)
+
+c.to_csv("data", index=False)
