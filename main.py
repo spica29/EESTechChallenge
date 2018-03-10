@@ -1,49 +1,44 @@
-import csv
 import pandas as pd
-import datetime as datetime
-import os
+from datetime import datetime
 
-df1 = pd.read_csv('C:\\Users\\Amela\\Desktop\\DHmiTrend.db\\Exported\\Log_R3065_CU_THS_SP_AS.csv')
-df2 = pd.read_csv('C:\\Users\\Amela\\Desktop\\DHmiTrend.db\\Exported\\Log_R3065_CU_THS_PV_AS.csv')
-df3 = open('C:\\Users\\Amela\\Desktop\\DHmiTrend.db\\Exported\\newFile.csv')
-filewriter = csv.writer(df3, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)
+df1 = pd.read_csv("ucna_mnozica_1/Log_R3063_CU_BLC_DR_DS.csv")
+df2 = pd.read_csv("ucna_mnozica_1/Log_R3063_CU_FCU_CV_PV_AS.csv")
+df3 = pd.read_csv("ucna_mnozica_1/Log_R3063_CU_FCU_HE_PV_AS.csv")
+df4 = pd.read_csv("ucna_mnozica_1/Log_R3063_CU_GST_INOUT_DS.csv")
+df5 = pd.read_csv("ucna_mnozica_1/Log_R3063_CU_THS_PV_AS.csv")
+df6 = pd.read_csv("ucna_mnozica_1/Log_R3063_CU_THS_SP_AS.csv")
 
-i = 0
-j = 0
-counter = 0
-while i < len(df1) - 1:
-    while j < len(df2) - 1:
-        if df1[i][0] == df2[i]:
-            list[counter] = [df1[i][0], df1[i][1], df2[j][1]]
-            i = i + 1
-            j = j + 1
-        elif i + 1 < j + 1:
-            list[counter] = [df1[i+1][0], df1[i+1][1], df2[j][1]]
-            i = i + 1
-            j = j + 1
+date = "2018-01-31"
+newdate = datetime.strptime(date, "%Y-%m-%d").date()
 
+df1_filtered = df1[((df1['value'] - 1.79769e+308 < 0.001))]
+df2_filtered = df2[((df2['value'] - 1.79769e+308 < 0.001))]
+df3_filtered = df3[((df3['value'] - 1.79769e+308 < 0.001))]
+df4_filtered = df4[((df4['value'] - 1.79769e+308 < 0.001))]
+df5_filtered = df5[((df5['value'] - 1.79769e+308 < 0.001))]
+df6_filtered = df6[((df6['value'] - 1.79769e+308 < 0.001))]
 
-counter = 0
-for key1, value1 in df1.items():
-    for key2, value2 in df2.items():
-        if key1 >= key2:
-            listOfKeysToDelete = listOfKeysToDelete + key2
-            filewriter.writerow([key1, value1, value2])
-        else:
-            break
-    df3.pop(listOfKeysToDelete, None)
+index_list1= df1_filtered.ts[(df1_filtered.ts >= "2018-02-01 00:00:00.00")].index.tolist()
+df1_filtered.drop(index_list1, inplace=True)
 
+index_list2= df2_filtered.ts[(df2_filtered.ts >= "2018-02-01 00:00:00.00")].index.tolist()
+df2_filtered.drop(index_list2, inplace=True)
 
-    #for key2, value2 in df2.items():
-     #   if key1 == key2:
-       #     df3.write(key1 + value1 + value2)
-      #  elif key1 > key2:
-        #    df3.write(key1, value1, value2)
-        #elif key2 > key1:
-        #    df3.write(key1, value1, value2)
+index_list3= df3_filtered.ts[(df3_filtered.ts >= "2018-02-01 00:00:00.00")].index.tolist()
+df3_filtered.drop(index_list3, inplace=True)
 
+index_list4= df4_filtered.ts[(df4_filtered.ts >= "2018-02-01 00:00:00.00")].index.tolist()
+df4_filtered.drop(index_list4, inplace=True)
 
+index_list5= df5_filtered.ts[(df5_filtered.ts >= "2018-02-01 00:00:00.00")].index.tolist()
+df5_filtered.drop(index_list5, inplace=True)
 
+index_list6= df6_filtered.ts[(df6_filtered.ts >= "2018-02-01 00:00:00.00")].index.tolist()
+df6_filtered.drop(index_list6, inplace=True)
 
-print str(df1)
-print str(df2)
+df1_filtered.to_csv("ucna_mnozica_1/Log_R3063_CU_BLC_DR_DS_isfiltrirano.csv", index=False)
+df2_filtered.to_csv("ucna_mnozica_1/Log_R3063_CU_FCU_CV_PV_AS_isfiltrirano.csv", index=False)
+df3_filtered.to_csv("ucna_mnozica_1/Log_R3063_CU_FCU_HE_PV_AS_isfiltrirano.csv", index=False)
+df4_filtered.to_csv("ucna_mnozica_1/Log_R3063_CU_GST_INOUT_DS_isfiltrirano.csv", index=False)
+df5_filtered.to_csv("ucna_mnozica_1/Log_R3063_CU_THS_PV_AS_isfiltrirano.csv", index=False)
+df6_filtered.to_csv("ucna_mnozica_1/Log_R3063_CU_THS_SP_AS_isfiltrirano.csv", index=False)
