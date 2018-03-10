@@ -2,16 +2,78 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1651b395-67f5-4151-9adb-1f6244cb6db6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learning_set_2.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learning_set_2/Log_R3065_CU_BLC_DR_DS.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learning_set_2/Log_R3065_CU_FCU_CV_PV_AS.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learning_set_2/Log_R3065_CU_FCU_HE_PV_AS.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learning_set_2/Log_R3065_CU_GST_INOUT_DS.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learning_set_2/Log_R3065_CU_THS_PV_AS.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learning_set_2/Log_R3065_CU_THS_SP_AS.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testing_set_1.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testing_set_2.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/testing_set.py" afterPath="$PROJECT_DIR$/learning_set_1.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sklop_1/learning_set_1.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sklop_1/learning_set_1/Log_R3063_CU_BLC_DR_DS.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sklop_1/learning_set_1/Log_R3063_CU_BLC_DR_DS_filtered.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sklop_1/learning_set_1/Log_R3063_CU_GST_INOUT_DS.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sklop_1/learning_set_1/Log_R3063_CU_GST_INOUT_DS_filtered.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sklop_1/learning_set_1/Log_R3063_CU_THS_PV_AS.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sklop_1/learning_set_1/Log_R3063_CU_THS_PV_AS_filtered.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sklop_1/learning_set_1/Log_R3063_CU_THS_SP_AS.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sklop_1/learning_set_1/Log_R3063_CU_THS_SP_AS_filtered.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sklop_1/learning_set_1/testing_set/Log_R3063_CU_BLC_DR_DS_filtered.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sklop_1/learning_set_1/testing_set/Log_R3063_CU_GST_INOUT_DS_filtered.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sklop_1/learning_set_1/testing_set/Log_R3063_CU_THS_PV_AS_filtered.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sklop_1/learning_set_1/testing_set/Log_R3063_CU_THS_SP_AS_filtered.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sklop_1/learning_set_2.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sklop_1/learning_set_2/Log_R3065_CU_BLC_DR_DS.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sklop_1/learning_set_2/Log_R3065_CU_BLC_DR_DS_filtered.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sklop_1/learning_set_2/Log_R3065_CU_GST_INOUT_DS.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sklop_1/learning_set_2/Log_R3065_CU_GST_INOUT_DS_filtered.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sklop_1/learning_set_2/Log_R3065_CU_THS_PV_AS.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sklop_1/learning_set_2/Log_R3065_CU_THS_PV_AS_filtered.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sklop_1/learning_set_2/Log_R3065_CU_THS_SP_AS.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sklop_1/learning_set_2/Log_R3065_CU_THS_SP_AS_filtered.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sklop_1/learning_set_2/testing_set/Log_R3065_CU_BLC_DR_DS_filtered.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sklop_1/learning_set_2/testing_set/Log_R3065_CU_GST_INOUT_DS_filtered.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sklop_1/learning_set_2/testing_set/Log_R3065_CU_THS_PV_AS_filtered.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sklop_1/learning_set_2/testing_set/Log_R3065_CU_THS_SP_AS_filtered.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sklop_1/testing_set_1.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sklop_1/testing_set_2.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sklop_2/learning_set_1.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sklop_2/learning_set_1/Log_R3063_CU_FCU_CV_PV_AS.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sklop_2/learning_set_1/Log_R3063_CU_FCU_CV_PV_AS_filtered.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sklop_2/learning_set_1/Log_R3063_CU_FCU_HE_PV_AS.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sklop_2/learning_set_1/Log_R3063_CU_FCU_HE_PV_AS_filtered.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sklop_2/learning_set_1/testing_set/Log_R3063_CU_FCU_CV_PV_AS_filtered.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sklop_2/learning_set_1/testing_set/Log_R3063_CU_FCU_HE_PV_AS_filtered.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sklop_2/learning_set_2.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sklop_2/learning_set_2/Log_R3065_CU_FCU_CV_PV_AS.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sklop_2/learning_set_2/Log_R3065_CU_FCU_CV_PV_AS_filtered.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sklop_2/learning_set_2/Log_R3065_CU_FCU_HE_PV_AS.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sklop_2/learning_set_2/Log_R3065_CU_FCU_HE_PV_AS_filtered.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sklop_2/learning_set_2/testing_set/Log_R3065_CU_FCU_CV_PV_AS_filtered.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sklop_2/learning_set_2/testing_set/Log_R3065_CU_FCU_HE_PV_AS_filtered.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sklop_2/testing_set_1.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sklop_2/testing_set_2.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learning_set_1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learning_set_1/Log_R3063_CU_BLC_DR_DS.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learning_set_1/Log_R3063_CU_BLC_DR_DS_filtered.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learning_set_1/Log_R3063_CU_FCU_CV_PV_AS.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learning_set_1/Log_R3063_CU_FCU_CV_PV_AS_filtered.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learning_set_1/Log_R3063_CU_FCU_HE_PV_AS.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learning_set_1/Log_R3063_CU_FCU_HE_PV_AS_filtered.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learning_set_1/Log_R3063_CU_GST_INOUT_DS.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learning_set_1/Log_R3063_CU_GST_INOUT_DS_filtered.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learning_set_1/Log_R3063_CU_THS_PV_AS.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learning_set_1/Log_R3063_CU_THS_PV_AS_filtered.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learning_set_1/Log_R3063_CU_THS_SP_AS.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learning_set_1/Log_R3063_CU_THS_SP_AS_filtered.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learning_set_1/testing_set/Log_R3063_CU_BLC_DR_DS_filtered.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learning_set_1/testing_set/Log_R3063_CU_FCU_CV_PV_AS_filtered.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learning_set_1/testing_set/Log_R3063_CU_FCU_HE_PV_AS_filtered.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learning_set_1/testing_set/Log_R3063_CU_GST_INOUT_DS_filtered.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learning_set_1/testing_set/Log_R3063_CU_THS_PV_AS_filtered.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learning_set_1/testing_set/Log_R3063_CU_THS_SP_AS_filtered.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learning_set_2.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learning_set_2/Log_R3065_CU_BLC_DR_DS.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learning_set_2/Log_R3065_CU_FCU_CV_PV_AS.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learning_set_2/Log_R3065_CU_FCU_HE_PV_AS.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learning_set_2/Log_R3065_CU_GST_INOUT_DS.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learning_set_2/Log_R3065_CU_THS_PV_AS.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/learning_set_2/Log_R3065_CU_THS_SP_AS.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testing_set_1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testing_set_2.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,20 +84,25 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/EESTechChallenge$testing_set_2__1_.coverage" NAME="testing_set_2 (1) Coverage Results" MODIFIED="1520705016520" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sklop_2" />
     <SUITE FILE_PATH="coverage/EESTechChallenge$testna_mnozica.coverage" NAME="testna_mnozica Coverage Results" MODIFIED="1520699951895" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/EESTechChallenge$learning_set_2__2_.coverage" NAME="learning_set_2 (2) Coverage Results" MODIFIED="1520704965530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sklop_2" />
     <SUITE FILE_PATH="coverage/hackathon$main.coverage" NAME="main Coverage Results" MODIFIED="1520686423164" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/EESTechChallenge$learning_set_2__1_.coverage" NAME="learning_set_2 (1) Coverage Results" MODIFIED="1520701417561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sklop_1/learning_set_2" />
     <SUITE FILE_PATH="coverage/hackathon$merge.coverage" NAME="merge Coverage Results" MODIFIED="1520698428019" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/EESTechChallenge$learning_set_1.coverage" NAME="learning_set_1 Coverage Results" MODIFIED="1520700722407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/EESTechChallenge$main.coverage" NAME="main Coverage Results" MODIFIED="1520699946128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/EESTechChallenge$learning_set_2.coverage" NAME="learning_set_2 Coverage Results" MODIFIED="1520704672972" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sklop_1" />
+    <SUITE FILE_PATH="coverage/EESTechChallenge$testing_set_2.coverage" NAME="testing_set_2 Coverage Results" MODIFIED="1520704680213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sklop_1" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="learning_set_2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/learning_set_2.py">
+      <file leaf-file-name="learning_set_1.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sklop_2/learning_set_1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="58">
-              <caret line="24" column="34" lean-forward="false" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -43,14 +110,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testing_set_2.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/testing_set_2.py">
+      <file leaf-file-name="learning_set_2.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sklop_2/learning_set_2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="80">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="65" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testing_set_1.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sklop_2/testing_set_1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="3" column="61" lean-forward="false" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testing_set_2.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sklop_2/testing_set_2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -81,6 +166,12 @@
         <option value="$PROJECT_DIR$/learning_set_1.py" />
         <option value="$PROJECT_DIR$/learning_set_2.py" />
         <option value="$PROJECT_DIR$/testing_set_2.py" />
+        <option value="$PROJECT_DIR$/sklop_1/learning_set_1.py" />
+        <option value="$PROJECT_DIR$/sklop_1/testing_set_1.py" />
+        <option value="$PROJECT_DIR$/sklop_1/learning_set_2.py" />
+        <option value="$PROJECT_DIR$/sklop_1/testing_set_2.py" />
+        <option value="$PROJECT_DIR$/sklop_2/learning_set_2.py" />
+        <option value="$PROJECT_DIR$/sklop_2/testing_set_2.py" />
       </list>
     </option>
   </component>
@@ -111,7 +202,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -124,8 +214,23 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EESTechChallenge" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EESTechChallenge" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sklop_1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -145,78 +250,97 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.learning_set_1">
-    <configuration default="false" name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.testing_set_2 (1)">
+    <configuration default="false" name="learning_set_2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sklop_1" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="hackathon" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sklop_1/learning_set_2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="merge" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="learning_set_2 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sklop_1/learning_set_2" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="hackathon" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/merge.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sklop_1/learning_set_2/learning_set_2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="testna_mnozica" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="testing_set_2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sklop_1" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="hackathon" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\Amra\PycharmProjects\EESTechChallenge\testing_set_1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sklop_1/testing_set_2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="learning_set_1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="learning_set_2 (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sklop_2" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="hackathon" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learning_set_1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sklop_2/learning_set_2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="testing_set_2 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sklop_2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="hackathon" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sklop_2/testing_set_2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -319,6 +443,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -364,18 +494,20 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="Python.main" />
-      <item index="1" class="java.lang.String" itemvalue="Python.merge" />
-      <item index="2" class="java.lang.String" itemvalue="Python.testna_mnozica" />
-      <item index="3" class="java.lang.String" itemvalue="Python.learning_set_1" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Python.learning_set_2" />
+      <item index="1" class="java.lang.String" itemvalue="Python.learning_set_2 (1)" />
+      <item index="2" class="java.lang.String" itemvalue="Python.testing_set_2" />
+      <item index="3" class="java.lang.String" itemvalue="Python.learning_set_2 (2)" />
+      <item index="4" class="java.lang.String" itemvalue="Python.testing_set_2 (1)" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python.learning_set_1" />
-        <item index="1" class="java.lang.String" itemvalue="Python.testna_mnozica" />
-        <item index="2" class="java.lang.String" itemvalue="Python.main" />
-        <item index="3" class="java.lang.String" itemvalue="Python.merge" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.testing_set_2 (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Python.learning_set_2 (2)" />
+        <item index="2" class="java.lang.String" itemvalue="Python.testing_set_2" />
+        <item index="3" class="java.lang.String" itemvalue="Python.learning_set_2" />
+        <item index="4" class="java.lang.String" itemvalue="Python.learning_set_2 (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -421,23 +553,30 @@
       <option name="project" value="LOCAL" />
       <updated>1520700251796</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added learning and testing set 2">
+      <created>1520700973327</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1520700973327</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="-16" width="3872" height="2092" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1815508" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18636364" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32887402" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32887402" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994652" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -462,13 +601,94 @@
     <MESSAGE value="added files" />
     <MESSAGE value="added testna_mnozica files" />
     <MESSAGE value="changing filenames" />
-    <option name="LAST_COMMIT_MESSAGE" value="changing filenames" />
+    <MESSAGE value="added learning and testing set 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="added learning and testing set 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/sklop_1/learning_set_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="5" column="26" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="40" selection-end-column="86" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sklop_1/testing_set_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="3" column="28" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="40" selection-end-column="98" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1120">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="44" selection-end-column="86" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sklop_1/learning_set_2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sklop_1/testing_set_2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="800">
+          <caret line="21" column="42" lean-forward="true" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sklop_2/learning_set_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sklop_1/learning_set_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sklop_1/learning_set_2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="3" column="15" lean-forward="true" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -483,9 +703,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1360">
           <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -499,63 +716,99 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="5" column="15" lean-forward="false" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/merge.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="537">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/learning_set_2.py">
+    <entry file="file://$PROJECT_DIR$/learning_set_2.py" />
+    <entry file="file://$PROJECT_DIR$/learning_set_1.py" />
+    <entry file="file://$PROJECT_DIR$/testing_set_1.py" />
+    <entry file="file://$PROJECT_DIR$/testing_set_2.py" />
+    <entry file="file://$PROJECT_DIR$/sklop_1/learning_set_2/learning_set_2.py" />
+    <entry file="file://$PROJECT_DIR$/sklop_1/testing_set_1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="24" column="34" lean-forward="false" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+        <state relative-caret-position="80">
+          <caret line="3" column="28" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="40" selection-end-column="98" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/learning_set_1.py">
+    <entry file="file://$PROJECT_DIR$/sklop_1/testing_set_2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="3" column="55" lean-forward="true" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
+        <state relative-caret-position="800">
+          <caret line="21" column="42" lean-forward="false" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testing_set_1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="3" column="28" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="44" selection-end-column="98" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testing_set_2.py">
+    <entry file="file://$PROJECT_DIR$/sklop_1/learning_set_1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
-          <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sklop_1/learning_set_2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="848">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="44" selection-end-column="86" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sklop_2/learning_set_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sklop_2/testing_set_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="3" column="61" lean-forward="false" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sklop_2/learning_set_2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sklop_2/testing_set_2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
