@@ -21,18 +21,19 @@ part3 = pd.merge(part1, part2, on='ts', how='outer')
 
 #print(type(c))
 
-value1 = 0
-value2 = 0
-value3 = 0
-value4 = 0
+value1 = -1
+value2 = -1
+value3 = -1
+value4 = -1
 
 c = part3
 
+c = c.sort_values(by='ts')
 #print(c)
 
 for index, row in c.iterrows():
     #print(c.iterrows())
-
+    #print(row['ts'])
     x_x = float(row['value_x_x'])
     y_x = float(row['value_y_x'])
     x_y = float(row['value_x_y'])
@@ -64,7 +65,6 @@ for index, row in c.iterrows():
     else:
         c.loc[index, 'value_y_y'] = value4
 
+c = c.rename(index=str, columns={"value_x_x": "ref_temp", "value_x_x": "real_temp", "value_x_y": "balcony", "value_y_y": "cabine"})
 
-print(c)
-
-c.to_csv("Merged/data", index=False)
+c.to_csv("Merged/data.csv", index=False)
