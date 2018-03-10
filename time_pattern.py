@@ -10,9 +10,13 @@ dataLeft = pd.read_csv('Merged/dataLeft.csv')
 dataLeft.index = pd.to_datetime(dataLeft['ts'])
 del dataLeft['ts']
 #print(dataLeft)
-data2minMax = dataLeft.resample('2Min').max()
-data3minMax = dataLeft.resample('3Min').max()
-data5minMax = dataLeft.resample('5Min').max()
-data10minMax = dataLeft.resample('10Min').max()
+data2minMax = dataLeft.resample('2Min').max().dropna(how='any')
+data3minMax = dataLeft.resample('3Min').max().dropna(how='any')
+data5minMax = dataLeft.resample('5Min').max().dropna(how='any')
+data10minMax = dataLeft.resample('10Min').max().dropna(how='any')
 
-print(data10minMax)
+data2minMin = dataLeft.resample('2Min').min().dropna(how='any')
+data3minMin = dataLeft.resample('3Min').min().dropna(how='any')
+data5minMin = dataLeft.resample('5Min').min().dropna(how='any')
+data10minMin = dataLeft.resample('10Min').min().dropna(how='any')
+
