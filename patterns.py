@@ -8,6 +8,7 @@ changed = False
 for index, row in dataLeft.iterrows():
     listOfPatterns = []
     listOfTemperatures = []
+    changed = False
     while changed is False:
         # check if cabine value has changed
         if index > 0:
@@ -19,8 +20,8 @@ for index, row in dataLeft.iterrows():
         #write all elements to one list
         listOfPatterns.append(dataLeft.loc[index])
         listOfTemperatures.append(dataLeft.loc[index, 'real_temp'])
-
         index = index + 1
+
     print("list of temperatures")
     print(listOfTemperatures)
     #calculate min
