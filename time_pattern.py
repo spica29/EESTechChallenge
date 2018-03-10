@@ -7,7 +7,7 @@ import math
 data = pd.read_csv('Merged/dataLeft.csv')
 #for index, row in dataLeft.iterrows():
 #print(dataLeft)
-data.index = pd.to_datetime(dataLeft['ts'])
+data.index = pd.to_datetime(data['ts'])
 del data['ts']
 #print(dataLeft)
 data2min = data.resample('2Min')
