@@ -11,6 +11,7 @@ df6 = pd.read_csv("ucna_mnozica_1/Log_R3063_CU_THS_SP_AS.csv")
 date = "2018-01-31"
 newdate = datetime.strptime(date, "%Y-%m-%d").date()
 
+#ucna mnozica
 df1_filtered = df1[((df1['value'] - 1.79769e+308 < 0.001))]
 df2_filtered = df2[((df2['value'] - 1.79769e+308 < 0.001))]
 df3_filtered = df3[((df3['value'] - 1.79769e+308 < 0.001))]
