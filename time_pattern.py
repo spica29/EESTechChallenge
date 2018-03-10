@@ -4,19 +4,30 @@ import math
 import numpy as np
 import math
 
-dataLeft = pd.read_csv('Merged/dataLeft.csv')
+data = pd.read_csv('Merged/dataLeft.csv')
 #for index, row in dataLeft.iterrows():
 #print(dataLeft)
-dataLeft.index = pd.to_datetime(dataLeft['ts'])
-del dataLeft['ts']
+data.index = pd.to_datetime(data['ts'])
+del data['ts']
 #print(dataLeft)
-data2minMax = dataLeft.resample('2Min').max().dropna(how='any')
-data3minMax = dataLeft.resample('3Min').max().dropna(how='any')
-data5minMax = dataLeft.resample('5Min').max().dropna(how='any')
-data10minMax = dataLeft.resample('10Min').max().dropna(how='any')
+data2min = data.resample('2Min')
+data2minMin = data2min.max().dropna(how='any')
+data2minMax = data2min.max().dropna(how='any')
+data2minMean = data2min.mean().dropna(how='any')
 
-data2minMin = dataLeft.resample('2Min').min().dropna(how='any')
-data3minMin = dataLeft.resample('3Min').min().dropna(how='any')
-data5minMin = dataLeft.resample('5Min').min().dropna(how='any')
-data10minMin = dataLeft.resample('10Min').min().dropna(how='any')
+data3min = data.resample('3Min')
+data3minMin = data3min.min().dropna(how='any')
+data3minMax = data3min.max().dropna(how='any')
+data3minMean = data3min.mean().dropna(how='any')
+
+data5min = data.resample('5Min')
+data5minMin = data5min.min().dropna(how='any')
+data5minMax = data5min.max().dropna(how='any')
+data5minMean = data5min.mean().dropna(how='any')
+
+data10min = data.resample('10Min')
+data10minMin = data10min.min().dropna(how='any')
+data10minMax = data10min.max().dropna(how='any')
+data10minMean = data10min.mean().dropna(how='any')
+
 
