@@ -65,6 +65,6 @@ for index, row in c.iterrows():
     else:
         c.loc[index, 'value_y_y'] = value4
 
-c = c.rename(index=str, columns={"value_x_x": "ref_temp", "value_x_x": "real_temp", "value_x_y": "balcony", "value_y_y": "cabine"})
+c = c.rename(index=str, columns={"value_x_x": "ref_temp", "value_y_x": "real_temp", "value_x_y": "balcony", "value_y_y": "cabine"})
 
-c.to_csv("Merged/data.csv", index=False)
+c.to_csv("Merged/dataLeft.csv", index=False)
