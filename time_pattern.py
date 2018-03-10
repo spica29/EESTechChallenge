@@ -25,11 +25,6 @@ data5minMin = data5min.min().dropna(how='any')
 data5minMax = data5min.max().dropna(how='any')
 data5minMean = data5min.mean().dropna(how='any')
 
-data5min = data.resample('5Min')
-data5minMin = data5min.min().dropna(how='any')
-data5minMax = data5min.max().dropna(how='any')
-data5minMean = data5min.mean().dropna(how='any')
-
 data10min = data.resample('10Min')
 data10minMin = data10min.min().dropna(how='any')
 data10minMax = data10min.max().dropna(how='any')
