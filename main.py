@@ -1,12 +1,12 @@
 import pandas as pd
 from datetime import datetime
 
-df1 = pd.read_csv("ucna_mnozica_1/Log_R3063_CU_BLC_DR_DS.csv")
-df2 = pd.read_csv("ucna_mnozica_1/Log_R3063_CU_FCU_CV_PV_AS.csv")
-df3 = pd.read_csv("ucna_mnozica_1/Log_R3063_CU_FCU_HE_PV_AS.csv")
-df4 = pd.read_csv("ucna_mnozica_1/Log_R3063_CU_GST_INOUT_DS.csv")
-df5 = pd.read_csv("ucna_mnozica_1/Log_R3063_CU_THS_PV_AS.csv")
-df6 = pd.read_csv("ucna_mnozica_1/Log_R3063_CU_THS_SP_AS.csv")
+df1 = pd.read_csv("learning_set_1/Log_R3063_CU_BLC_DR_DS.csv")
+df2 = pd.read_csv("learning_set_1/Log_R3063_CU_FCU_CV_PV_AS.csv")
+df3 = pd.read_csv("learning_set_1/Log_R3063_CU_FCU_HE_PV_AS.csv")
+df4 = pd.read_csv("learning_set_1/Log_R3063_CU_GST_INOUT_DS.csv")
+df5 = pd.read_csv("learning_set_1/Log_R3063_CU_THS_PV_AS.csv")
+df6 = pd.read_csv("learning_set_1/Log_R3063_CU_THS_SP_AS.csv")
 
 date = "2018-01-31"
 newdate = datetime.strptime(date, "%Y-%m-%d").date()
@@ -37,9 +37,9 @@ df5_filtered.drop(index_list5, inplace=True)
 index_list6= df6_filtered.ts[(df6_filtered.ts >= "2018-02-01 00:00:00.00")].index.tolist()
 df6_filtered.drop(index_list6, inplace=True)
 
-df1_filtered.to_csv("ucna_mnozica_1/Log_R3063_CU_BLC_DR_DS_isfiltrirano.csv", index=False)
-df2_filtered.to_csv("ucna_mnozica_1/Log_R3063_CU_FCU_CV_PV_AS_isfiltrirano.csv", index=False)
-df3_filtered.to_csv("ucna_mnozica_1/Log_R3063_CU_FCU_HE_PV_AS_isfiltrirano.csv", index=False)
-df4_filtered.to_csv("ucna_mnozica_1/Log_R3063_CU_GST_INOUT_DS_isfiltrirano.csv", index=False)
-df5_filtered.to_csv("ucna_mnozica_1/Log_R3063_CU_THS_PV_AS_isfiltrirano.csv", index=False)
-df6_filtered.to_csv("ucna_mnozica_1/Log_R3063_CU_THS_SP_AS_isfiltrirano.csv", index=False)
+df1_filtered.to_csv("learning_set_1/Log_R3063_CU_BLC_DR_DS_filtered.csv", index=False)
+df2_filtered.to_csv("learning_set_1/Log_R3063_CU_FCU_CV_PV_AS_filtered.csv", index=False)
+df3_filtered.to_csv("learning_set_1/Log_R3063_CU_FCU_HE_PV_AS_filtered.csv", index=False)
+df4_filtered.to_csv("learning_set_1/Log_R3063_CU_GST_INOUT_DS_filtered.csv", index=False)
+df5_filtered.to_csv("learning_set_1/Log_R3063_CU_THS_PV_AS_filtered.csv", index=False)
+df6_filtered.to_csv("learning_set_1/Log_R3063_CU_THS_SP_AS_filtered.csv", index=False)
