@@ -5,7 +5,7 @@ import numpy as np
 import scipy.integrate as integrate
 import math
 
-dataLeft = pd.read_csv('Merged/dataLeft.csv')
+dataLeft = pd.read_csv('Merged/dataRight.csv')
 #for index, row in dataLeft.iterrows():
 index = 0
 listOfTemperatures = []
@@ -89,7 +89,7 @@ while index < len(dataLeft):
 for i in range(0, len(listOfVectors)):
     print(listOfVectors[i])
 
-with open("output.csv", "w") as f:
+with open("output_right.csv", "w") as f:
     writer = csv.writer(f)
     writer.writerows(listOfVectors)
 
