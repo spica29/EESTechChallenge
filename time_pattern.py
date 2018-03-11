@@ -18,34 +18,42 @@ data.index = pd.to_datetime(data['ts'])
 def custom_function(array):
     return array
 
-data2min = data.resample('2Min')
-print(data2min['real_temp'])
-data2minRefTemp = data2min['ref_temp']
-data2minRefTemp = data2minRefTemp.apply(custom_function).dropna(how='any').to_frame().reset_index()
-#print(data2minRefTemp)
-data2minRefTemp.index = pd.to_datetime(data2minRefTemp['ts'])
-data2min = data2min['real_temp']
-data2minMin = data2min.min().dropna(how='any').to_frame().reset_index()
-print(data2minMin)
-data2minMax = data2min.max().dropna(how='any').to_frame().reset_index()
-data2minMean = data2min.mean().dropna(how='any').to_frame().reset_index()
+def calculate_test_data(interval):
+    data2min = data.resample('2Min')
+    print(data2min['real_temp'])
+    data2minRefTemp = data2min['ref_temp']
+    data2minRefTempMin = data2minRefTemp.min().dropna(how='any').to_frame().reset_index()
+    data2minRefTempMax = data2minRefTemp.max().dropna(how='any').to_frame().reset_index()
+    data2minRefTempMin.index = pd.to_datetime(data2minRefTempMin['ts'])
+    data2minRefTempMax.index = pd.to_datetime(data2minRefTempMax['ts'])
 
-data2min = pd.merge(data2minMin, data2minMax, on='ts', how='inner')
-data2min = pd.merge(data2min, data2minMean, on='ts', how='inner')
-#print(data2min.index)
-data2min = data2min.rename(index=str, columns={"real_temp_x": "min", "real_temp_y": "max", "real_temp": "mean"})
-data2min.index = pd.to_datetime(data2min['ts'])
-for index, row in data2min.iterrows():
-    delta_t = data2minRefTemp.loc[index, 'max'] - data2minRefTemp.loc[index, 'min']
-    integ, error = integrate.quad(lambda x: x, data2min.loc[index, 'min'], data2min.loc[index, 'max'])
-    rmsd = math.sqrt((data2min.loc[index, 'max'] - data2min.loc[index, 'min']) * (data2min.loc[index, 'max'] - data2min.loc[index, 'min']))
-    data2min.loc[index, 'delta_t'] = delta_t
-    data2min.loc[index, 'integ'] = integ
-    data2min.loc[index, 'rmsd'] = integ
+    data2minDoorsSum = data2min['balcony'].sum().dropna(how='any').to_frame().reset_index()
+    data2minDoorsSum.index = pd.to_datetime(data2minDoorsSum['ts'])
+    data2minDoorsLen = data2min['balcony'].size().dropna(how='any').to_frame().reset_index()
+    data2minDoorsLen.index = pd.to_datetime(data2minDoorsLen['ts'])
 
-#print(data2min)
+    data2min = data2min['real_temp']
+    data2minMin = data2min.min().dropna(how='any').to_frame().reset_index()
+    data2minMax = data2min.max().dropna(how='any').to_frame().reset_index()
+    data2minMean = data2min.mean().dropna(how='any').to_frame().reset_index()
+    data2min = pd.merge(data2minMin, data2minMax, on='ts', how='inner')
+    data2min = pd.merge(data2min, data2minMean, on='ts', how='inner')
+    data2min = data2min.rename(index=str, columns={"real_temp_x": "min", "real_temp_y": "max", "real_temp": "mean"})
+    data2min.index = pd.to_datetime(data2min['ts'])
 
-#print(data2minInteg)
+    for index, row in data2min.iterrows():
+        delta_t = data2minRefTempMax.loc[index, 'ref_temp'] - data2minRefTempMin.loc[index, 'ref_temp']
+        integ, error = integrate.quad(lambda x: x, data2min.loc[index, 'min'], data2min.loc[index, 'max'])
+        rmsd = math.sqrt((data2min.loc[index, 'max'] - data2min.loc[index, 'min']) * (data2min.loc[index, 'max'] - data2min.loc[index, 'min']))
+        doors = data2minDoorsSum.loc[index, 'balcony'] / data2minDoorsLen.loc[index, 'balcony']
+
+        data2min.loc[index, 'delta_t'] = delta_t
+        data2min.loc[index, 'integ'] = integ
+        data2min.loc[index, 'rmsd'] = rmsd
+        data2min.loc[index, 'doors'] = doors
+
+
+
 data3min = data.resample('3Min')['real_temp']
 data3minMin = data3min.min().dropna(how='any').to_frame().reset_index()
 data3minMax = data3min.max().dropna(how='any').to_frame().reset_index()
