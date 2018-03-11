@@ -3,26 +3,42 @@ import pandas as pd
 import math
 import numpy as np
 import math
+import scipy.integrate as integrate
+
+
+def integ(array_like):
+    #print(array_like)
+    #print(data2minMin)
+    integ, error = integrate.quad(lambda x: x, data2minMin['real_temp'], data2min['real_temp'])
+    return integ
 
 data = pd.read_csv('Merged/dataLeft.csv')
-#for index, row in dataLeft.iterrows():
-#print(dataLeft)
 data.index = pd.to_datetime(data['ts'])
-#del data['ts']
-#print(dataLeft)
-data2min = data.resample('2Min')['real_temp']
+
+data2min = data.resample('2Min')
+data2minRefTemp = data2min['ref_temp']
+data2minRefTemp = data2minRefTemp.to_frame().reset_index()
+data2min = data2min['real_temp']
 data2minMin = data2min.min().dropna(how='any').to_frame().reset_index()
 data2minMax = data2min.max().dropna(how='any').to_frame().reset_index()
 data2minMean = data2min.mean().dropna(how='any').to_frame().reset_index()
-data2minDelta = list(map(max, data2min))
 
-print(data2minDelta)
 data2min = pd.merge(data2minMin, data2minMax, on='ts', how='inner')
 data2min = pd.merge(data2min, data2minMean, on='ts', how='inner')
-#data2min = pd.merge(data2min, data2minDelta, on='ts', how='inner')
+print(data2min.index)
 data2min = data2min.rename(index=str, columns={"real_temp_x": "min", "real_temp_y": "max", "real_temp": "mean"})
-#print(data2min)
+data2min.index = pd.to_datetime(data2min['ts'])
+for index, row in data2min.iterrows():
+    delta_t = data2minRefTemp.loc[index, 'max'] - data2minRefTemp.loc[index, 'min']
+    integ, error = integrate.quad(lambda x: x, data2min.loc[index, 'min'], data2min.loc[index, 'max'])
+    rmsd = math.sqrt((data2min.loc[index, 'max'] - data2min.loc[index, 'min']) * (data2min.loc[index, 'max'] - data2min.loc[index, 'min']))
+    data2min.loc[index, 'delta_t'] = delta_t
+    data2min.loc[index, 'integ'] = integ
+    data2min.loc[index, 'rmsd'] = integ
 
+print(data2min)
+
+#print(data2minInteg)
 data3min = data.resample('3Min')['real_temp']
 data3minMin = data3min.min().dropna(how='any').to_frame().reset_index()
 data3minMax = data3min.max().dropna(how='any').to_frame().reset_index()
