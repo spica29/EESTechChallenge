@@ -15,17 +15,24 @@ def integ(array_like):
 data = pd.read_csv('Merged/dataLeft.csv')
 data.index = pd.to_datetime(data['ts'])
 
+def custom_function(array):
+    return array
+
 data2min = data.resample('2Min')
+print(data2min['real_temp'])
 data2minRefTemp = data2min['ref_temp']
-data2minRefTemp = data2minRefTemp.to_frame().reset_index()
+data2minRefTemp = data2minRefTemp.apply(custom_function).dropna(how='any').to_frame().reset_index()
+#print(data2minRefTemp)
+data2minRefTemp.index = pd.to_datetime(data2minRefTemp['ts'])
 data2min = data2min['real_temp']
 data2minMin = data2min.min().dropna(how='any').to_frame().reset_index()
+print(data2minMin)
 data2minMax = data2min.max().dropna(how='any').to_frame().reset_index()
 data2minMean = data2min.mean().dropna(how='any').to_frame().reset_index()
 
 data2min = pd.merge(data2minMin, data2minMax, on='ts', how='inner')
 data2min = pd.merge(data2min, data2minMean, on='ts', how='inner')
-print(data2min.index)
+#print(data2min.index)
 data2min = data2min.rename(index=str, columns={"real_temp_x": "min", "real_temp_y": "max", "real_temp": "mean"})
 data2min.index = pd.to_datetime(data2min['ts'])
 for index, row in data2min.iterrows():
@@ -36,7 +43,7 @@ for index, row in data2min.iterrows():
     data2min.loc[index, 'integ'] = integ
     data2min.loc[index, 'rmsd'] = integ
 
-print(data2min)
+#print(data2min)
 
 #print(data2minInteg)
 data3min = data.resample('3Min')['real_temp']
